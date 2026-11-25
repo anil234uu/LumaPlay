@@ -27,6 +27,6 @@ Every push runs **Build Android debug APK**. You can also start it from the Acti
 - Test gesture and three-button navigation, display cutouts, tablet and foldable layouts. Inspect manifest permissions and check for crashes/ANRs. Measure cold start, memory and battery before making any performance claims.
 
 ## Current verification status
-Build, lint, and signature verification results are available in [GitHub Actions](https://github.com/anil234uu/LumaPlay/actions/workflows/android.yml). The project targets API 36. Device testing remains pending.
+A clean local build of version 2.0.0 passed `:app:assembleDebug` and `:app:lintDebug` using JDK 17, Gradle 8.13, and Android SDK 36. Android lint reported eight warnings and zero errors. Android SDK Build Tools verified the debug APK signature and alignment. Device testing remains pending.
 
 References: https://developer.android.com/about/versions/16/setup-sdk ; https://developer.android.com/about/versions/17/setup-sdk ; https://developers.google.com/youtube/terms/developer-policies
